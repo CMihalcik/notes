@@ -38,9 +38,10 @@ The format is namespace:functionName(args).
     f().
 
 # Pid ! is fire and forget
+Is this what they call naked banging?
 
 # Loading an erl
--code is loaded from the codepath, .erl files in the cd of the repl will be found automatically
+- code is loaded from the codepath, .erl files in the cd of the repl will be found automatically
 
 # Running a function from a module
 - can be done by entering the following:
@@ -50,16 +51,16 @@ The format is namespace:functionName(args).
     nodes().
 
 # RPC
--remote pricedure call, run something on a remote node
+- remote pricedure call, run something on a remote node
 
 # spawn()
--will start a new processs, optionally on a remote node
+- will start a new processs, optionally on a remote node
 
 # List comprehension
     [X || X <- lists:seq(1,10)].
--produces [1,2,3,4,5,6,7,8,9,10]
+produces [1,2,3,4,5,6,7,8,9,10]
     [X*2 || X <- lists:seq(1,10)].
--produces [1,2,3,4,5,6,7,8,9,10]
+produces [1,2,3,4,5,6,7,8,9,10]
 
 # Command Line docs:
 http://erlang.org/doc/man/erl.html
@@ -70,22 +71,22 @@ http://erldocs.com/R15B/
 # Opening new nodes
 From the terminal:
     erl -sname someNodeName
--this will launch a node with a repl and will report it's 'name' as someNodeName@hostname
+- this will launch a node with a repl and will report it's 'name' as someNodeName@hostname
 
 
 # Detecting other Nodes
     nodes().
--will probably return an empty list
--[]
+- will probably return an empty list
+- []
 
 # Connecting to other nodes
     net_adm:ping(nodeName@hostName).
--should respond with 
+- should respond with 
 	pong
--if there are special characters in the name you'll need to warp it in ticks, tech. the problem is that this isn't a valid atom name
+- if there are special characters in the name you'll need to warp it in ticks, tech. the problem is that this isn't a valid atom name
     net_adm:ping('dog@host').
--might have a problem connecting from sublime because it doesn't have a name
--fixed this by updating /Users/chrismihalcik/Library/Application Support/Sublime Text 2/Packages/SublimeREPL/config/Erlang/Main.sublime-menu
+- might have a problem connecting from sublime because it doesn't have a name
+- fixed this by updating /Users/chrismihalcik/Library/Application Support/Sublime Text 2/Packages/SublimeREPL/config/Erlang/Main.sublime-menu
 
 # Load a module (a compiled module) on all connected nodes
     nl(modulename).
@@ -94,7 +95,7 @@ From the terminal:
     spawn('nodeName@hostname', module, function, args).
 e.g.
     spawn('dog@Chriss-MacBook-Pro', atm, stop, []).
--will return the erlang pid of the process
+- will return the erlang pid of the process
 
 # Stop all atms on connected nodes (does not include the current node)
     [spawn(X, atm, stop, []) || X <- nodes()].
