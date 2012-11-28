@@ -14,7 +14,9 @@ launches a shell, which is a vm, which is a node
 ```
 
 # Shut down a shell cleanly
-    init:stop()
+```
+init:stop()
+```
 
 # File system nav
 ```
@@ -23,15 +25,16 @@ ls().
 pwd().
 ```
 
-
-
 # Compile
-    c("some file name.erl").
-
+```
+c("some file name.erl").
+```
 
 # Run a function 
 The format is namespace:functionName(args).
-    namespace:function().
+```
+io:fwrite("hello, world\n").
+```
 
 # Erlang processes are isolated
 
