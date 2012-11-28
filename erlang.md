@@ -11,11 +11,11 @@ Control+\
     init:stop()
 
 # File system nav
-'''
+```
 cd().
 ls().
 pwd().
-'''
+```
 
 # Compile
 c("some file name.erl").
