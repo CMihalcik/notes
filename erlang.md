@@ -100,7 +100,7 @@ From the terminal:
 - if there are special characters in the name you'll need to warp it in ticks, tech. the problem is that this isn't a valid atom name
     net_adm:ping('dog@host').
 - might have a problem connecting from sublime because it doesn't have a name
-- fixed this by updating /Users/chrismihalcik/Library/Application Support/Sublime Text 2/Packages/SublimeREPL/config/Erlang/Main.sublime-menu
+- fixed this by updating /Users/username/Library/Application Support/Sublime Text 2/Packages/SublimeREPL/config/Erlang/Main.sublime-menu
 
 # Load a module (a compiled module) on all connected nodes
     nl(modulename).
@@ -108,7 +108,7 @@ From the terminal:
 #Start a module on a remote node
     spawn('nodeName@hostname', module, function, args).
 e.g.
-    spawn('dog@Chriss-MacBook-Pro', atm, stop, []).
+    spawn('dog@salad', atm, stop, []).
 - will return the erlang pid of the process
 
 # Stop all atms on connected nodes (does not include the current node)
@@ -121,3 +121,4 @@ e.g.
 
 
 
+lrrad
