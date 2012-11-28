@@ -4,7 +4,7 @@
 
 # Shut down a shell
     Control+\
--or-
+or
     halt()
 
 # Shut down a shell cleanly
