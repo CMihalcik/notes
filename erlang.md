@@ -8,10 +8,11 @@ or
 ```halt()```
 
 # Comments
-'''
+```
 % Begin with a percent
 % Continue to the end of the line
 % There are no multiline comments
+```
 
 # Shut down a shell cleanly
     init:stop()
