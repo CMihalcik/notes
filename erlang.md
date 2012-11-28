@@ -3,9 +3,8 @@
 launches a shell, which is a vm, which is a node
 
 # Shut down a shell
-Control+\\
-or
-```halt()```
+1. Control+\\
+2. ```halt()```
 
 # Comments
 ```
