@@ -1,19 +1,21 @@
 #Startup
-erl 
+    erl 
 - launches a shell, which is a vm, which is a node
 
 # Shut down a shell
 Control+\
 -or-
-halt()
+    halt()
 
 # Shut down a shell cleanly
-init:stop()
+    init:stop()
 
 # File system nav
+'''
 cd().
 ls().
 pwd().
+'''
 
 # Compile
 c("some file name.erl").
