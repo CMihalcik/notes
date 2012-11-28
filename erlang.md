@@ -3,7 +3,7 @@
 launches a shell, which is a vm, which is a node
 
 # Shut down a shell
-Control+\
+Control+\\
 or
 ```halt()```
 
