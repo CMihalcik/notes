@@ -36,8 +36,6 @@ The format is namespace:functionName(args).
 io:fwrite("hello, world\n").
 ```
 
-# Erlang processes are isolated
-
 # Functions
 - start with an ->
 - end with a .
@@ -66,11 +64,16 @@ Is this what they call naked banging?
 
 # spawn()
 - will start a new processs, optionally on a remote node
+- Erlang processes are isolated
 
 # List comprehension
-    [X || X <- lists:seq(1,10)].
+```
+[X || X <- lists:seq(1,10)].
+```
 produces [1,2,3,4,5,6,7,8,9,10]
-    [X*2 || X <- lists:seq(1,10)].
+```
+[X*2 || X <- lists:seq(1,10)].
+```
 produces [1,2,3,4,5,6,7,8,9,10]
 
 # Command Line docs:
