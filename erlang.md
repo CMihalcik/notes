@@ -70,7 +70,7 @@ http://erldocs.com/R15B/
 
 # Opening new nodes
 From the terminal:
-    erl -sname someNodeName
+```erl -sname someNodeName```
 - this will launch a node with a repl and will report it's 'name' as someNodeName@hostname
 
 
