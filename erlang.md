@@ -28,11 +28,11 @@ The format is namespace:functionName(args).
 # Erlang processes are isolated
 
 # Functions
--start with an ->
--end with a .
--statements are seperated by a ,
--statements with multiple clauses seperate them with a ;
--statements with multiple clauses do not put anything after the last clause
+- start with an ->
+- end with a .
+- statements are seperated by a ,
+- statements with multiple clauses seperate them with a ;
+- statements with multiple clauses do not put anything after the last clause
 
 # Clear shell variables
     f().
