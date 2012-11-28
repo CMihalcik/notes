@@ -1,6 +1,6 @@
 # Startup
     erl 
-- launches a shell, which is a vm, which is a node
+launches a shell, which is a vm, which is a node
 
 # Shut down a shell
     Control+\
@@ -21,9 +21,8 @@ pwd().
     c("some file name.erl").
 
 
-# run a function 
-- the format is namespace:functionName(args).
-- e.g
+# Run a function 
+The format is namespace:functionName(args).
     namespace:function().
 
 # Erlang processes are isolated
